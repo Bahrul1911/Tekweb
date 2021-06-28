@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Multi Filter Select</h4>
+      </div>
+      <div class="card-body">
+        <a class="btn btn-primary btn-round ml-auto" data-toggle="modal" data-target="#addRowModal">tambah data</a>
+        <div class="table-responsive">
+          <table id="multi-filter-select" class="display table table-striped table-hover">
+            <thead>
+            <tr>
+              <th>no</th>
+              <th>id pelanggan</th>
+              <th>nama pelanggan</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let pel of pelanggans; let i =index">
+              <td>{{i + 2}}</td>
+              <td>{{pel.id}}</td>
+              <td>{{pel.nama}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
